@@ -64,7 +64,7 @@ class DiffusionCLIP(object):
         # ----------- Model -----------#
         if self.config.data.dataset == "LSUN":
             if self.config.data.category == "bedroom":
-                url = "https://image-editing-test-12345.s3-us-west-2.amazonaws.com/checkpoints/bedroom.ckpt"
+                url = "https://heibox.uni-heidelberg.de/f/f179d4f21ebc4d43bbfe/?dl=1"
             elif self.config.data.category == "church_outdoor":
                 url = "https://image-editing-test-12345.s3-us-west-2.amazonaws.com/checkpoints/church_outdoor.ckpt"
         elif self.config.data.dataset == "CelebA_HQ":
@@ -310,7 +310,7 @@ class DiffusionCLIP(object):
         # ----------- Model -----------#
         if self.config.data.dataset == "LSUN":
             if self.config.data.category == "bedroom":
-                url = "https://image-editing-test-12345.s3-us-west-2.amazonaws.com/checkpoints/bedroom.ckpt"
+                url = "https://heibox.uni-heidelberg.de/f/f179d4f21ebc4d43bbfe/?dl=1"
             elif self.config.data.category == "church_outdoor":
                 url = "https://image-editing-test-12345.s3-us-west-2.amazonaws.com/checkpoints/church_outdoor.ckpt"
         elif self.config.data.dataset == "CelebA_HQ":
@@ -615,7 +615,7 @@ class DiffusionCLIP(object):
         # ----------- Model -----------#
         if self.config.data.dataset == "LSUN":
             if self.config.data.category == "bedroom":
-                url = "https://image-editing-test-12345.s3-us-west-2.amazonaws.com/checkpoints/bedroom.ckpt"
+                url = "https://heibox.uni-heidelberg.de/f/f179d4f21ebc4d43bbfe/?dl=1"
             elif self.config.data.category == "church_outdoor":
                 url = "https://image-editing-test-12345.s3-us-west-2.amazonaws.com/checkpoints/church_outdoor.ckpt"
         elif self.config.data.dataset == "CelebA_HQ":
@@ -739,7 +739,7 @@ class DiffusionCLIP(object):
         print(self.args.exp)
         if self.config.data.dataset == "LSUN":
             if self.config.data.category == "bedroom":
-                url = "https://image-editing-test-12345.s3-us-west-2.amazonaws.com/checkpoints/bedroom.ckpt"
+                url = "https://heibox.uni-heidelberg.de/f/f179d4f21ebc4d43bbfe/?dl=1"
             elif self.config.data.category == "church_outdoor":
                 url = "https://image-editing-test-12345.s3-us-west-2.amazonaws.com/checkpoints/church_outdoor.ckpt"
         elif self.config.data.dataset == "CelebA_HQ":
@@ -918,7 +918,7 @@ class DiffusionCLIP(object):
         # ----------- Models -----------#
         if self.config.data.dataset == "LSUN":
             if self.config.data.category == "bedroom":
-                url = "https://image-editing-test-12345.s3-us-west-2.amazonaws.com/checkpoints/bedroom.ckpt"
+                url = "https://heibox.uni-heidelberg.de/f/f179d4f21ebc4d43bbfe/?dl=1"
             elif self.config.data.category == "church_outdoor":
                 url = "https://image-editing-test-12345.s3-us-west-2.amazonaws.com/checkpoints/church_outdoor.ckpt"
         elif self.config.data.dataset == "CelebA_HQ":
@@ -1064,7 +1064,7 @@ class DiffusionCLIP(object):
         # ----------- Models -----------#
         if self.config.data.dataset == "LSUN":
             if self.config.data.category == "bedroom":
-                url = "https://image-editing-test-12345.s3-us-west-2.amazonaws.com/checkpoints/bedroom.ckpt"
+                url = "https://heibox.uni-heidelberg.de/f/f179d4f21ebc4d43bbfe/?dl=1"
             elif self.config.data.category == "church_outdoor":
                 url = "https://image-editing-test-12345.s3-us-west-2.amazonaws.com/checkpoints/church_outdoor.ckpt"
         elif self.config.data.dataset == "CelebA_HQ":
