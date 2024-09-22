@@ -947,7 +947,7 @@ class DiffusionCLIP(object):
                 else:
                     file_name = 'bedroom_princess_t500.pth'
                     cached_file = os.path.join('/root/.cache/torch/hub/checkpoints/', file_name)
-                    ckpt = torch.load(cached_file, map_location='cpu')
+                    # ckpt = torch.load(cached_file, map_location='cpu')
                 learn_sigma = False
             elif self.config.data.dataset in ["FFHQ", "AFHQ", "IMAGENET"]:
                 model_i = i_DDPM(self.config.data.dataset)
