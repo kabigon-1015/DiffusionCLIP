@@ -326,7 +326,8 @@ class DiffusionCLIP(object):
             if self.args.model_path:
                 init_ckpt = torch.load(self.args.model_path)
             else:
-                init_ckpt = torch.hub.load_state_dict_from_url(url, map_location=self.device)
+                file_name = 'bedroom_princess_t500.pth'
+                init_ckpt = torch.hub.load_state_dict_from_url(url, map_location=self.device, file_name=file_name)
             learn_sigma = False
             print("Original diffusion Model loaded.")
         elif self.config.data.dataset in ["FFHQ", "AFHQ", "IMAGENET"]:
@@ -631,7 +632,8 @@ class DiffusionCLIP(object):
             if self.args.model_path:
                 ckpt = torch.load(self.args.model_path)
             else:
-                ckpt = torch.hub.load_state_dict_from_url(url, map_location=self.device)
+                file_name = 'bedroom_princess_t500.pth'
+                ckpt = torch.hub.load_state_dict_from_url(url, map_location=self.device, file_name=file_name)
             learn_sigma = False
             print("Original diffusion Model loaded.")
         elif self.config.data.dataset in ["FFHQ", "AFHQ", "IMAGENET"]:
@@ -758,7 +760,8 @@ class DiffusionCLIP(object):
                 if model_path:
                     ckpt = torch.load(model_path)
                 else:
-                    ckpt = torch.hub.load_state_dict_from_url(url, map_location=self.device)
+                    file_name = 'bedroom_princess_t500.pth'
+                    ckpt = torch.hub.load_state_dict_from_url(url, map_location=self.device, file_name=file_name)
                 learn_sigma = False
             elif self.config.data.dataset in ["FFHQ", "AFHQ", "IMAGENET"]:
                 model_i = i_DDPM(self.config.data.dataset)
@@ -942,7 +945,8 @@ class DiffusionCLIP(object):
                 if model_path:
                     ckpt = torch.load(model_path)
                 else:
-                    ckpt = torch.hub.load_state_dict_from_url(url, map_location=self.device)
+                    file_name = 'bedroom_princess_t500.pth'
+                    ckpt = torch.hub.load_state_dict_from_url(url, map_location=self.device, file_name=file_name)
                 learn_sigma = False
             elif self.config.data.dataset in ["FFHQ", "AFHQ", "IMAGENET"]:
                 model_i = i_DDPM(self.config.data.dataset)
@@ -1083,7 +1087,8 @@ class DiffusionCLIP(object):
                 if model_path:
                     ckpt = torch.load(model_path)
                 else:
-                    ckpt = torch.hub.load_state_dict_from_url(url, map_location=self.device)
+                    file_name = 'bedroom_princess_t500.pth'
+                    ckpt = torch.hub.load_state_dict_from_url(url, map_location=self.device, file_name=file_name)
                 learn_sigma = False
             elif self.config.data.dataset in ["FFHQ", "AFHQ"]:
                 model_i = i_DDPM(self.config.data.dataset)
