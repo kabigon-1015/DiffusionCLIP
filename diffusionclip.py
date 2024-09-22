@@ -79,7 +79,8 @@ class DiffusionCLIP(object):
             if self.args.model_path:
                 init_ckpt = torch.load(self.args.model_path)
             else:
-                init_ckpt = torch.hub.load_state_dict_from_url(url, map_location=self.device)
+                file_name = 'bedroom_princess_t500.pth'
+                init_ckpt = torch.hub.load_state_dict_from_url(url, map_location=self.device, file_name=file_name)
             learn_sigma = False
             print("Original diffusion Model loaded.")
         elif self.config.data.dataset in ["FFHQ", "AFHQ"]:
